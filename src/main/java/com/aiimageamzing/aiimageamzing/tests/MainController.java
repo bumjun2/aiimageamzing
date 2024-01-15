@@ -14,6 +14,9 @@ public class MainController {
     @GetMapping("/example")
     public ResponseEntity<?> test(){
         return ResponseEntity
-                .ok("안녕안녕");
+                .ok()
+                .body(
+                        "한녕한녕"
+                );
     }
 }
